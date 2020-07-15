@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+  </head>
+  <body style="background-color: #34282C;">
+    <div style="background-color: #3EA99F; margin: 100px 300px;">
+<!-------------------------------------Heading-------------------------------------------------------->
+      <div style="padding: 20px 0 0 0; margin: auto;">
+        <h1
+          style="color: #393e46; font-family: Arial, Helvetica, sans-serif; text-align: center;">
+          Contact Us
+        </h1>
+<!-------------------------------------Sub-Heading-------------------------------------------------------->
+        <h6 style="text-align: center;">
+          Enter your informations and we will contact with you within 24 hours.
+        </h6>
+      </div>
+      <table style="text-align: left; margin: 0px auto; padding: 20px 0 0 0;">
+<!-----------------------------------------Name-------------------------------------------------------->
+        <tr>
+          <td style="padding: 20px 0 0 0;">
+            <label for="First Name">Name</label>
+          </td>
+          <td style="padding: 20px 0 0 40px;">
+            <form action="" method="POST" autocomplete="off" name="contactform">
+              <input type="text" name="txtfname" id="txtfname" placeholder="First Name" required/>
+              <input type="text" name="txtlname" id="txtlname" placeholder="Last Name" required/>
+          </td>
+        </tr>
+<!---------------------------------------------Email-------------------------------------------------------->
+        <tr>
+          <td style="padding: 20px 0 0 0;">
+            <label for="email">Email</label>
+          </td>
+          <td style="padding: 20px 0 0 40px;">
+              <input type="email" name="varemail" id="varemail" placeholder="Email" style="width: 365px;" required/>
+          </td>
+        </tr>
+<!----------------------------------------------Mobile-------------------------------------------------------->
+        <tr>
+          <td style="padding: 20px 0 0 0;">
+            <label for="mobile">Mobile</label>
+          </td>
+          <td style="padding: 20px 0 0 40px;">
+              <input type="tel" id="phone" name="phone" placeholder="+91-00000-00000" pattern="[0-9]{5}-[0-9]{5}"/>
+          </td>
+        </tr>
+<!-----------------------------------------Message Subject-------------------------------------------------------->
+        <tr>
+          <td style="padding: 20px 0 0 0;">
+            <label for="Message">Message Subject</label>
+          </td>
+          <td style="padding: 20px 0 0 40px;">
+              <select name="msg" id="msg" placeholder="Message" required> 
+                <option value="Fee">Fee Enquiry</option>
+                <option value="Academic">Academic Curriculum Enquiry</option>
+                <option value="PTA">PTA Fund Enquiry</option>
+                <option value="Seat">Merit/Mangement Seat Enquiry</option>
+                <option value="Admission">Admission Help desk</option>
+                <option value="Faculty">Faculty Enquiry</option>
+                <option value="others">others</option>
+              </select>
+          </td>
+        </tr>
+<!--------------------------------------------Message-------------------------------------------------------->
+        <tr>
+          <td style="padding: 20px 0 0 0px;">
+            <label for="Message">Message</label>
+          </td>
+          <td style="padding: 20px 0 0 40px;">
+              <textarea name="Message" id="Message" cols="25" placeholder="Message" rows="5" required></textarea>
+          </td>
+        </tr>
+      </table>
+<!------------------------------------------Submit Button-------------------------------------------------------->
+      <div style="padding: 50px 0 0 50px; text-align: center;">
+          <button type="button" onclick="alert('Message Sent!')" style="background-color: wheat;">
+            <strong>
+              SUBMIT
+            </strong>
+          </button>
+      </div>
+<!--------------------------------------------Navigation Bar-------------------------------------------------------->
+      <div style="padding: 20px 0 0 0; text-align: center;">
+       <nav>
+        <strong>
+          <a href="login.html">Login</a> |
+	  <a href="feedback.html">Feedback</a>
+        </strong>
+      </nav>
+      </div>
+    </div>
+  </body>
+</html>
+<!-------------------------------------------------END-------------------------------------------------------->

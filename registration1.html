@@ -1,0 +1,187 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registraion form</title>
+  </head>
+  <body style="background-color: #34282C;">
+    <div
+      style=" background-color: #3EA99F; padding: 0 0 20px 0; margin: 100px 300px;">
+<!-------------------------------------Heading-------------------------------------------------------->
+      <div style="padding: 20px 0 0 0; margin: auto;">
+        <h1
+          style=" color: #393e46; font-family: Arial, Helvetica, sans-serif; text-align: center;">
+          REGISTRATION
+        </h1>
+      </div>
+      <table style="text-align: left; margin: 0px auto; padding: 20px 0 0 0;">
+<!-------------------------------------First Name-------------------------------------------------------->
+        <tr>
+          <td style="padding: 20px 0 0 0px;">
+            <label for="First Name">First Name</label>
+          </td>
+          <td style="padding: 20px 0 0 200px;">
+            <form action="" method="POST" autocomplete="off" name="registrationform">
+              <input type="text" name="txtfname" id="txtfname" placeholder="First Name" required/>
+          </td>
+        </tr>
+<!---------------------------------------Last Name-------------------------------------------------------->
+        <tr>
+          <td style="padding: 20px 0 0 0;">
+            <label for="Last Name">Last Name</label>
+          </td>
+          <td style="padding: 20px 0 0 200px;">
+              <input type="text" name="txtlname" id="txtlname" placeholder="Last Name" required/>
+          </td>
+        </tr>
+<!---------------------------------------Date of Birth-------------------------------------------------------->
+        <tr>
+          <td style="padding: 20px 0 0 0;">
+            <label for="DOB">Date of Birth</label>
+          </td>
+          <td style="padding: 20px 0 0 200px;">
+              <input type="date" id="dob" name="dob" required />
+          </td>
+        </tr>
+<!------------------------------------------Email-------------------------------------------------------->
+        <tr>
+          <td style="padding: 20px 0 0 0;">
+            <label for="email">Email</label>
+          </td>
+          <td style="padding: 20px 0 0 200px;">
+              <input type="email" name="email" id="email" placeholder="Email" required />
+          </td>
+        </tr>
+<!-------------------------------------------Address-------------------------------------------------------->
+        <tr>
+          <td style="padding: 20px 0 0 0px;">
+            <label for="Address">Address</label>
+          </td>
+          <td style="padding: 20px 0 0 200px;">
+              <textarea name="address" id="address" cols="25" placeholder="Address" rows="5" required></textarea>
+          </td>
+        </tr>
+<!--------------------------------------------Password------------------------------------------------------->
+        <tr>
+          <td style="padding: 20px 0 0 0;">
+            <label for="Password">Password</label>
+          </td>
+          <td style="padding: 20px 0 0 200px;">
+              <input type="password" name="Password" id="Password" placeholder="Password" required/>
+          </td>
+        </tr>
+<!-------------------------------------Confirm Password-------------------------------------------------------->
+        <tr>
+          <td style="padding: 20px 0 0 0;">
+            <label for="CPassword">Confirm Password</label>
+          </td>
+          <td style="padding: 20px 0 0 200px;">
+              <input type="password" name="CPassword" id="CPassword" placeholder="Confirm Password" required/>
+          </td>
+        </tr>
+<!----------------------------------------------Gender-------------------------------------------------------->
+        <tr>
+          <td style="padding: 20px 0 0 0;">
+            <label for="Gender">Gender</label>
+          </td>
+          <td style="padding: 20px 0 0 200px;">
+              <input type="radio" id="male" name="gender" value="male" />
+              <label for="male">Male</label>
+              <input type="radio" id="female" name="gender" value="female" />
+              <label for="female">Female</label>
+              <input type="radio" id="other" name="gender" value="other" />
+              <label for="other">Other</label>
+          </td>
+        </tr>
+<!----------------------------------------------Mobile-------------------------------------------------------->
+        <tr>
+          <td style="padding: 20px 0 0 0;">
+            <label for="mobile">Mobile</label>
+          </td>
+          <td style="padding: 20px 0 0 200px;">
+              <input type="tel" id="phone" name="phone" placeholder="+91-00000-00000" pattern="[0-9]{5}-[0-9]{5}" required/>
+          </td>
+        </tr>
+<!-------------------------------------Alternate Mobile-------------------------------------------------------->
+        <tr>
+          <td style="padding: 20px 0 0 0;">
+            <label for="amobile">Alternate Mobile</label>
+          </td>
+          <td style="padding: 20px 0 0 200px;">
+              <input type="tel" id="aphn" name="phone" placeholder="+91-00000-00000" pattern="[0-9]{5}-[0-9]{5}" required/>
+            <!--/form-->
+          </td>
+        </tr>
+<!-----------------------------------------------District-------------------------------------------------------->
+        <tr>
+          <td style="padding: 20px 0 0 0;">
+            <label for="District">District</label>
+          </td>
+          <td style="padding: 20px 0 0 200px;">
+              <select name="District" id="District" placeholder="District" required>
+ 		<option selected="selected" value="-1">--Select--</option>
+		<option value="Alappuzha">Alappuzha</option>
+                <option value="Ernakulam">Ernakulam</option>
+                <option value="Idukki">Idukki</option>
+                <option value="Kannur">Kannur</option>
+                <option value="Kasaragod">Kasaragod</option>
+                <option value="Kollam">Kollam</option>
+                <option value="Kottayam">Kottayam</option>
+                <option value="Kozhikode">Kozhikode</option>
+                <option value="Pathanamthitta">Pathanamthitta</option>
+                <option value="Malappuram">Malappuram</option>
+                <option value="Thiruvananthapuram">Thiruvananthapuram</option>
+                <option value="Palakkad">Palakkad</option>
+                <option value="Thrissur">Thrissur</option>
+                <option value="Wayanad">Wayanad</option>
+              </select>
+          </td>
+        </tr>
+<!--------------------------------------------Zip Code-------------------------------------------------------->
+        <tr>
+          <td style="padding: 20px 0 0 0;">
+            <label for="zcode">Zip Code</label>
+          </td>
+          <td style="padding: 20px 0 0 200px;">
+              <input type="tel" id="zcode" pattern="[0-9]{6}" placeholder="Pin code" required />
+          </td>
+        </tr>
+<!----------------------------------------------Image------------------------------------------------------------->
+        <tr>
+          <td style="padding: 20px 0 0 0px;">
+            <label for="Image">Image</label>
+          </td>
+          <td style="padding: 20px 0 0 0px;">
+              <input type="file" name="fileToUpload" id="fileToUpload" required/>
+              <input type="submit" value="Upload" name="submit" required/>
+          </td>
+        </tr>
+      </table>
+<!------------------------------------------Register Button-------------------------------------------------------->
+      <div style="padding: 50px 0 0 0; text-align: center;">
+        <!--form action="" method="POST"-->
+          <button type="button" onclick="alert('Successfully Registered the account!')" style="background-color: wheat;">
+            <strong>
+              SUBMIT
+            </strong>
+          </button>
+      </div>
+<!--------------------------------------------Navigation Bar-------------------------------------------------------->
+      <div style="padding: 20px 0 0 0; text-align: center;">
+       <nav>
+        <strong>
+          <a href="login.html">Login</a> |
+	  <a href="feedback.html">Feedback</a> |
+          <a href="contact.html">Contact Us</a>
+        </strong>
+      </nav>
+      </div>
+    </div>
+  </body>
+</html>
+<!-------------------------------------------------END-------------------------------------------------------->
+  
+         
+       
